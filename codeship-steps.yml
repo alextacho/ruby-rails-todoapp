@@ -8,6 +8,9 @@
     - name: rubocop
       service: web
       command: rubocop
+    - name: test_command
+      service: web
+      command: echo test
   - name: deploy
     tag: master
     service: deploy
